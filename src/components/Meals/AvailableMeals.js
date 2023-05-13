@@ -13,7 +13,7 @@ const AvailableMeals = () => {
     const fetchMeals = async () => {
       setIsLoading(true);
       const response = await fetch(
-        'https://react-http-62075-default-rtdb.europe-west1.firebasedatabase.app'
+        'https://react-http-62075-default-rtdb.europe-west1.firebasedatabase.app/meals.json'
       );
 
       if (!response.ok) {
